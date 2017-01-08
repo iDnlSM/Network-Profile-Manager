@@ -8,9 +8,6 @@ using System.Windows.Forms;
 
 namespace Network_Profile_Manager {
 	static class Program {
-		/// <summary>
-		/// Ponto de entrada principal para o aplicativo.
-		/// </summary>
 		[STAThread]
 		static void Main() {
 			Application.EnableVisualStyles();
@@ -32,7 +29,7 @@ namespace Network_Profile_Manager {
 				}
 				Environment.Exit( 0 );
 			}
-			Application.Run( new Form1() );
+			Application.Run( new mainForm() );
 		}
 
 		static private bool isElevated() {
